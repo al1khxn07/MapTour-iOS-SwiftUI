@@ -33,7 +33,7 @@ struct LocationPreviewView: View {
                     .fill(.ultraThinMaterial)
                     .offset(y: 65)
         )
-        .cornerRadius(10)
+        .clipShape(RoundedRectangle(cornerRadius: 10.0))
     }
 }
 
@@ -59,13 +59,13 @@ extension LocationPreviewView {
                     .resizable()
                     .scaledToFill()
                     .frame(width: 100, height: 100)
-                    .cornerRadius(10)
+                    .clipShape(RoundedRectangle(cornerRadius: 10.0))
                 
             }
         }
         .padding(6)
         .background(Color.white)
-        .cornerRadius(10)
+        .clipShape(RoundedRectangle(cornerRadius: 10.0))
     }
     
     private var titleSection: some View {

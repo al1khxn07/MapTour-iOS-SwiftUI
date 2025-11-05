@@ -97,7 +97,7 @@ extension LocationDetailView {
             }   
             .allowsHitTesting(false)
             .aspectRatio(1, contentMode: .fit)
-            .cornerRadius(30)
+            .clipShape(RoundedRectangle(cornerRadius: 30.0))
     }
     
     private var backButton: some View {
@@ -109,7 +109,7 @@ extension LocationDetailView {
                 .padding(16)
                 .foregroundColor(.primary)
                 .background(.thickMaterial)
-                .cornerRadius(10)
+                .clipShape(RoundedRectangle(cornerRadius: 10.0))
                 .shadow(radius: 4)
                 .padding()
         }
